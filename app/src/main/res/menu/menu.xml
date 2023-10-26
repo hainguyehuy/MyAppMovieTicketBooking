@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/trang_ch"
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:title="@string/l_ch_phim"
+        android:id="@+id/calendar"
+        android:icon="@drawable/baseline_calendar_month_24"/>
+    <item
+        android:title="@string/tin_t_c"
+        android:id="@+id/newspaper"
+        android:icon="@drawable/baseline_newspaper_24"/>
+    <item
+        android:title="@string/th_ng_b_o"
+        android:id="@+id/notif"
+        android:icon="@drawable/baseline_doorbell_24"/>
+    <item
+        android:title="@string/t_i_kho_n"
+        android:id="@+id/profile"
+        android:icon="@drawable/baseline_person_pin_24"/>
+</menu>
