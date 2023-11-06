@@ -10,7 +10,12 @@ import com.example.myappmovieticketbooking.data.DataTinTuc
 import com.google.android.material.imageview.ShapeableImageView
 
 
-class AdapterTinTuc(private val listTinTuc: ArrayList<DataTinTuc>): RecyclerView.Adapter<AdapterTinTuc.TinTucHolder>() {
+class AdapterTinTuc(private val listTinTuc: ArrayList<DataTinTuc>, private val onClickImage : TinTucInterface): RecyclerView.Adapter<AdapterTinTuc.TinTucHolder>() {
+    interface TinTucInterface{
+        fun onClick(position: Int){
+
+        }
+    }
     inner class TinTucHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val imageTT : ShapeableImageView = itemView.findViewById(R.id.imgTinTuc)
         val titleTT : TextView = itemView.findViewById(R.id.tvTitleTinTuc)
@@ -29,6 +34,9 @@ class AdapterTinTuc(private val listTinTuc: ArrayList<DataTinTuc>): RecyclerView
         holder.titleTT.text = currentItem.title
         holder.dateTT.text = currentItem.datetime
 
+        holder.imageTT.setOnClickListener {
+            onClickImage.onClick(position)
+        }
     }
 
     override fun getItemCount(): Int {

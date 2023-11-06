@@ -1,13 +1,17 @@
 package com.example.myappmovieticketbooking.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myappmovieticketbooking.R
+import com.example.myappmovieticketbooking.activity.BeginActivity
+import com.example.myappmovieticketbooking.activity.DetailTinTucActivity
 import com.example.myappmovieticketbooking.adapter.AdapterTinTuc
 import com.example.myappmovieticketbooking.data.DataTinTuc
 
@@ -35,8 +39,17 @@ class TinTucFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         recycleViewTinTuc = view.findViewById(R.id.ryvTinTuc)
         dataInit()
-        recycleViewTinTuc.adapter = AdapterTinTuc(listTinTuc)
-        recycleViewTinTuc.layoutManager = LinearLayoutManager(context)
+        adapterTinTuc = AdapterTinTuc(listTinTuc, object : AdapterTinTuc.TinTucInterface{
+            override fun onClick(position: Int) {
+//                val intent = Intent(context,DetailTinTucActivity::class.java)
+//                intent.putExtra("imageTinTuc",listTinTuc[position].image)
+//                intent.putExtra("titletinTuc",listTinTuc[position].title)
+//                startActivity(intent)
+                Toast.makeText(context,"ban da click vao ${listTinTuc[position].datetime}",Toast.LENGTH_SHORT).show()
+            }
+        })
+        recycleViewTinTuc.adapter = adapterTinTuc
+        recycleViewTinTuc.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
         recycleViewTinTuc.setHasFixedSize(true)
     }
 
