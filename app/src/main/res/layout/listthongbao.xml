@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="8dp">
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imgTinTuc"
+        android:id="@+id/imgTB"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:adjustViewBounds="true"
@@ -18,7 +18,7 @@
 
     </com.google.android.material.imageview.ShapeableImageView>
     <TextView
-        android:id="@+id/tvTitleTinTuc"
+        android:id="@+id/tvTitleTB"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
@@ -27,14 +27,13 @@
         android:textStyle="bold"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgTinTuc"
+        app:layout_constraintStart_toEndOf="@+id/imgTB"
         app:layout_constraintTop_toTopOf="parent"
         />
 
     <TextView
-        android:id="@+id/tvDateTimeTT"
+        android:id="@+id/tvDateTB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10/10/2023"
@@ -42,11 +41,10 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imgTinTuc"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitleTinTuc" />
+        app:layout_constraintStart_toEndOf="@+id/imgTB"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleTB" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

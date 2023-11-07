@@ -8,7 +8,7 @@
     android:layout_margin="8dp"
     >
     <TextView
-        android:id="@+id/tvDetailtinTuc"
+        android:id="@+id/tvDetailTB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Câu chuyện mang tính chất khải huyền, xây dựng một truyền thuyết mới về Đấng cứu thế với sự kết hợp của phim hành động và kinh dị không dành cho những người yếu bóng vía. "
@@ -16,7 +16,7 @@
         android:textSize="20sp"/>
 
     <ImageView
-        android:id="@+id/imageDetailTinTuc"
+        android:id="@+id/imageDetailTB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

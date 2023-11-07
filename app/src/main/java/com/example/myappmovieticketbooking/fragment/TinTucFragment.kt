@@ -23,10 +23,10 @@ import com.example.myappmovieticketbooking.data.DataTinTuc
 class TinTucFragment : Fragment() {
     private lateinit var adapterTinTuc: AdapterTinTuc
     private lateinit var listTinTuc : ArrayList<DataTinTuc>
-    lateinit var imageId : Array<Int>
-    lateinit var titleTT : Array<String>
-    lateinit var dateTT : Array<String>
-    lateinit var recycleViewTinTuc : RecyclerView
+    private lateinit var imageId : Array<Int>
+    private lateinit var titleTT : Array<String>
+    private lateinit var dateTT : Array<String>
+    private lateinit var recycleViewTinTuc : RecyclerView
         override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -41,11 +41,10 @@ class TinTucFragment : Fragment() {
         dataInit()
         adapterTinTuc = AdapterTinTuc(listTinTuc, object : AdapterTinTuc.TinTucInterface{
             override fun onClick(position: Int) {
-//                val intent = Intent(context,DetailTinTucActivity::class.java)
-//                intent.putExtra("imageTinTuc",listTinTuc[position].image)
-//                intent.putExtra("titletinTuc",listTinTuc[position].title)
-//                startActivity(intent)
-                Toast.makeText(context,"ban da click vao ${listTinTuc[position].datetime}",Toast.LENGTH_SHORT).show()
+                val intent = Intent(context,DetailTinTucActivity::class.java)
+                intent.putExtra("imageTinTuc",listTinTuc[position].image)
+                intent.putExtra("titleTinTuc",listTinTuc[position].title)
+                startActivity(intent)
             }
         })
         recycleViewTinTuc.adapter = adapterTinTuc
