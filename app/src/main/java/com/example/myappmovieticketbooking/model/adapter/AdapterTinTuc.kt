@@ -1,4 +1,4 @@
-package com.example.myappmovieticketbooking.adapter
+package com.example.myappmovieticketbooking.model.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myappmovieticketbooking.R
-import com.example.myappmovieticketbooking.data.DataTinTuc
+import com.example.myappmovieticketbooking.model.data.DataTinTuc
 import com.google.android.material.imageview.ShapeableImageView
 
 

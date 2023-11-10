@@ -1,4 +1,4 @@
-package com.example.myappmovieticketbooking.adapter
+package com.example.myappmovieticketbooking.model.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myappmovieticketbooking.R
-import com.example.myappmovieticketbooking.data.DataThongBao
+import com.example.myappmovieticketbooking.model.data.DataThongBao
 import com.google.android.material.imageview.ShapeableImageView
 
 class AdapterThongBao(private var listTB : List<DataThongBao>, private val onClickImage : ThongBaoInterface) : RecyclerView.Adapter<AdapterThongBao.ThongBaoHolder>() {

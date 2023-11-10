@@ -1,4 +1,4 @@
-package com.example.myappmovieticketbooking.fragment
+package com.example.myappmovieticketbooking.view.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,10 +10,10 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myappmovieticketbooking.R
-import com.example.myappmovieticketbooking.activity.BeginActivity
-import com.example.myappmovieticketbooking.activity.DetailTinTucActivity
-import com.example.myappmovieticketbooking.adapter.AdapterTinTuc
-import com.example.myappmovieticketbooking.data.DataTinTuc
+import com.example.myappmovieticketbooking.view.activity.BeginActivity
+import com.example.myappmovieticketbooking.view.activity.DetailTinTucActivity
+import com.example.myappmovieticketbooking.model.adapter.AdapterTinTuc
+import com.example.myappmovieticketbooking.model.data.DataTinTuc
 
 /**
  * A simple [Fragment] subclass.
@@ -41,7 +41,7 @@ class TinTucFragment : Fragment() {
         dataInit()
         adapterTinTuc = AdapterTinTuc(listTinTuc, object : AdapterTinTuc.TinTucInterface{
             override fun onClick(position: Int) {
-                val intent = Intent(context,DetailTinTucActivity::class.java)
+                val intent = Intent(context, DetailTinTucActivity::class.java)
                 intent.putExtra("imageTinTuc",listTinTuc[position].image)
                 intent.putExtra("titleTinTuc",listTinTuc[position].title)
                 startActivity(intent)

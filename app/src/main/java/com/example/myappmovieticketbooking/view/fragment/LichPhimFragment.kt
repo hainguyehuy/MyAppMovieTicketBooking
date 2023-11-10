@@ -1,4 +1,4 @@
-package com.example.myappmovieticketbooking.fragment
+package com.example.myappmovieticketbooking.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

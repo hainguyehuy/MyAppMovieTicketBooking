@@ -1,4 +1,4 @@
-package com.example.myappmovieticketbooking.fragment
+package com.example.myappmovieticketbooking.view.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myappmovieticketbooking.R
-import com.example.myappmovieticketbooking.activity.DetailThongBaoActivity
-import com.example.myappmovieticketbooking.adapter.AdapterThongBao
-import com.example.myappmovieticketbooking.data.DataThongBao
+import com.example.myappmovieticketbooking.view.activity.DetailThongBaoActivity
+import com.example.myappmovieticketbooking.model.adapter.AdapterThongBao
+import com.example.myappmovieticketbooking.model.data.DataThongBao
 
 /**
  * A simple [Fragment] subclass.
@@ -39,7 +39,7 @@ class ThongbaoFragment : Fragment() {
         recycleViewThongBao = view.findViewById(R.id.rcvTB)
         adapterThongBao = AdapterThongBao(listThongBao,object : AdapterThongBao.ThongBaoInterface{
             override fun onClick(position: Int) {
-                val intent = Intent(context,DetailThongBaoActivity::class.java)
+                val intent = Intent(context, DetailThongBaoActivity::class.java)
                 intent.putExtra("imageTB",listThongBao[position].imageTB)
                 intent.putExtra("titleTB",listThongBao[position].titleTB)
                 startActivity(intent)

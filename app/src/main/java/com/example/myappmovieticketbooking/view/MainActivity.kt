@@ -1,9 +1,9 @@
-package com.example.myappmovieticketbooking
+package com.example.myappmovieticketbooking.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.myappmovieticketbooking.activity.BeginActivity
+import com.example.myappmovieticketbooking.view.activity.BeginActivity
 import com.example.myappmovieticketbooking.databinding.ActivityMainBinding
 
 

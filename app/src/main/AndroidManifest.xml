@@ -13,16 +13,16 @@
         android:theme="@style/Theme.MyAppMovieTicketBooking"
         tools:targetApi="31">
         <activity
-            android:name=".activity.DetailThongBaoActivity"
+            android:name=".view.activity.DetailThongBaoActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.DetailTinTucActivity"
+            android:name=".view.activity.DetailTinTucActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.BeginActivity"
+            android:name=".view.activity.BeginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

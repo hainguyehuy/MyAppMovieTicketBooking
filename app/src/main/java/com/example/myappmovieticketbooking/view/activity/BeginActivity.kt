@@ -1,14 +1,14 @@
-package com.example.myappmovieticketbooking.activity
+package com.example.myappmovieticketbooking.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.myappmovieticketbooking.fragment.LichPhimFragment
+import com.example.myappmovieticketbooking.view.fragment.LichPhimFragment
 import com.example.myappmovieticketbooking.R
-import com.example.myappmovieticketbooking.fragment.TaikhoanFragment
-import com.example.myappmovieticketbooking.fragment.ThongbaoFragment
-import com.example.myappmovieticketbooking.fragment.TinTucFragment
-import com.example.myappmovieticketbooking.fragment.TrangChuFragment
+import com.example.myappmovieticketbooking.view.fragment.TaikhoanFragment
+import com.example.myappmovieticketbooking.view.fragment.ThongbaoFragment
+import com.example.myappmovieticketbooking.view.fragment.TinTucFragment
+import com.example.myappmovieticketbooking.view.fragment.TrangChuFragment
 import com.example.myappmovieticketbooking.databinding.ActivityBeginBinding
 
 

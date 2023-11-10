@@ -9,4 +9,6 @@
     <string name="tin_t_c">Tin tức</string>
     <string name="l_ch_phim">Lịch Phim</string>
     <string name="start">START</string>
+    <string name="title_movies">Title Movies</string>
+    <string name="phim_ang_chi_u">Phim Đang Chiếu</string>
 </resources>
